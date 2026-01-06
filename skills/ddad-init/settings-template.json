@@ -1,0 +1,26 @@
+{
+  "$schema": "https://claude.ai/settings-schema.json",
+  "permissions": {
+    "defaultMode": "default"
+  },
+  "hooks": {
+    "PreToolUse": [],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "If the user is asking to push code to remote (git push), you MUST perform a comprehensive code review BEFORE executing the push. Follow these steps:\n\n1. Run `git diff origin/$(git branch --show-current)..HEAD` to see all changes to be pushed\n2. Run `git log origin/$(git branch --show-current)..HEAD --oneline` to see commits\n3. Analyze the changes for:\n   - Code quality issues\n   - Security vulnerabilities\n   - Missing tests\n   - Documentation gaps\n   - Coding standard violations\n4. Present a review summary with:\n   - ✅ Approved items\n   - ⚠️ Warnings (non-blocking)\n   - ❌ Issues that should be fixed\n5. Ask user to confirm before proceeding with push\n\nIf user explicitly confirms after review, proceed with push. If critical issues found, recommend fixing before push."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [],
+    "SessionStart": []
+  },
+  "env": {
+    "PROJECT_NAME": "{{PROJECT_NAME}}",
+    "PROJECT_TYPE": "{{PROJECT_TYPE}}"
+  }
+}
