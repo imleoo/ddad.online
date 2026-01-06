@@ -602,15 +602,15 @@ migrate_existing_docs() {
         # Requirements documents
         if [[ "$file_lower" =~ (requirement|req|prd|user.*story|feature.*request|spec|srs|urs) ]]; then
             target_dir="01_requirements"
+        # API documents (check before design to avoid "api-design" matching design first)
+        elif [[ "$file_lower" =~ (api|endpoint|swagger|openapi|rest|graphql|guide.*api|api.*guide) ]]; then
+            target_dir="04_api"
+        # Architecture documents (check before design to avoid "architecture-design" matching design first)
+        elif [[ "$file_lower" =~ (architecture|arch|system.*design|technical.*design|topology) ]]; then
+            target_dir="03_architecture"
         # Design documents
         elif [[ "$file_lower" =~ (design|ui|ux|wireframe|mockup|prototype) ]]; then
             target_dir="02_design"
-        # Architecture documents
-        elif [[ "$file_lower" =~ (architecture|arch|system.*design|technical.*design|topology) ]]; then
-            target_dir="03_architecture"
-        # API documents
-        elif [[ "$file_lower" =~ (api|endpoint|swagger|openapi|rest|graphql) ]]; then
-            target_dir="04_api"
         # Database documents
         elif [[ "$file_lower" =~ (database|db|schema|migration|sql|er.*diagram|data.*model) ]]; then
             target_dir="05_database"
@@ -771,7 +771,7 @@ echo -e "${GREEN}╚════════════════════
 echo ""
 
 # Detect if this is an existing project
-detect_project_type "$TARGET_DIR"
+detect_project_type "$TARGET_DIR" || true  # Don't exit on false return
 
 # Run analysis for existing projects or if forced
 if [ "$IS_EXISTING_PROJECT" = true ] || [ "$FORCE_ANALYZE" = true ]; then
