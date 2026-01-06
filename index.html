@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDAD - 文档驱动AI开发方法论 | Document-Driven AI Development</title>
+    <meta name="description" content="DDAD（Document-Driven AI Development）是一套专为AI协作时代设计的开发方法论，通过规范化文档实现人机高效协作。">
+    <meta name="keywords" content="DDAD, 文档驱动开发, AI开发, Vibe Coding, Claude, 团队协作">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Noto+Sans+SC:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#hero" class="logo">
+                    <span class="logo-icon">📚</span>
+                    <span class="logo-text">DDAD</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#about" class="nav-link">关于</a>
+                    <a href="#principles" class="nav-link">核心原则</a>
+                    <a href="#features" class="nav-link">特性</a>
+                    <a href="#get-started" class="nav-link">开始使用</a>
+                    <a href="https://leoobai.cn/claude-code-in-teams/readme.html" class="nav-link nav-link-primary" target="_blank">阅读完整文档</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>AI协作时代的开发范式</span>
+                </div>
+                <h1 class="hero-title">
+                    文档驱动AI开发
+                    <span class="gradient-text">DDAD</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Document-Driven AI Development
+                </p>
+                <p class="hero-description">
+                    当AI成为开发团队的一员时，我们如何确保它能准确理解人类意图并高效协作？<br>
+                    DDAD提供了答案：通过结构化文档建立人机协作的精确契约。
+                </p>
+                <div class="hero-cta">
+                    <a href="https://leoobai.cn/claude-code-in-teams/readme.html" class="btn btn-primary" target="_blank">
+                        <span>开始学习</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <span>了解更多</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">3</div>
+                        <div class="stat-label">核心原则</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">协作成熟度级别</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">13</div>
+                        <div class="stat-label">实战章节</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">核心理念</span>
+                <h2 class="section-title">什么是DDAD？</h2>
+                <p class="section-description">
+                    DDAD继承并扩展了规范驱动思想，专为AI协作时代设计
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-icon">🎯</div>
+                    <h3>从规范驱动到文档驱动</h3>
+                    <p>
+                        传统的Spec-Driven开发强调通过规范文档指导开发流程。DDAD在此基础上，
+                        将文档提升为人机协作的核心接口，让AI能够像团队成员一样理解项目全貌。
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🤝</div>
+                    <h3>人机协作的新范式</h3>
+                    <p>
+                        DDAD不仅仅是一套文档规范，更是一种全新的协作模式。通过结构化的文档体系，
+                        实现人类创意与AI执行力的完美结合，让团队效率提升10倍。
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🚀</div>
+                    <h3>可落地的实践方法</h3>
+                    <p>
+                        从基础设施搭建到高风险场景处理，DDAD提供了完整的实施路径。
+                        包含真实案例、最佳实践和风险管控策略，让你的团队快速上手。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Principles Section -->
+    <section class="section principles-section" id="principles">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">三大支柱</span>
+                <h2 class="section-title">DDAD核心原则</h2>
+                <p class="section-description">
+                    构建高效人机协作的三大基石
+                </p>
+            </div>
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <div class="principle-number">01</div>
+                    <div class="principle-icon">📋</div>
+                    <h3 class="principle-title">规范即接口</h3>
+                    <p class="principle-subtitle">Spec as Interface</p>
+                    <p class="principle-description">
+                        规范（Spec）是AI的执行指令，而非可有可无的文档。
+                        结构化的规范成为人类与AI之间精确的"协作契约"，
+                        所有项目需求和约束都被翻译成AI可理解的语言。
+                    </p>
+                    <ul class="principle-features">
+                        <li>AI可直接理解的结构化规范</li>
+                        <li>明确的输入输出定义</li>
+                        <li>可验证的执行标准</li>
+                    </ul>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-number">02</div>
+                    <div class="principle-icon">💡</div>
+                    <h3 class="principle-title">知识即代码</h3>
+                    <p class="principle-subtitle">Knowledge as Code</p>
+                    <p class="principle-description">
+                        架构决策、编码规范、业务规则全部文档化。
+                        AI通过文档获得完整的"项目记忆"，
+                        新团队成员（包括AI）零成本融入。
+                    </p>
+                    <ul class="principle-features">
+                        <li>版本化的知识管理</li>
+                        <li>可追溯的决策记录</li>
+                        <li>自动化的知识传承</li>
+                    </ul>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-number">03</div>
+                    <div class="principle-icon">⚡</div>
+                    <h3 class="principle-title">协作即编排</h3>
+                    <p class="principle-subtitle">Collaboration as Orchestration</p>
+                    <p class="principle-description">
+                        人类负责创意、决策、架构设计，
+                        AI负责实现、优化、重复性工作，
+                        文档确保两者无缝协作。
+                    </p>
+                    <ul class="principle-features">
+                        <li>清晰的职责划分</li>
+                        <li>高效的任务分配</li>
+                        <li>持续的质量反馈</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">核心特性</span>
+                <h2 class="section-title">为什么选择DDAD？</h2>
+                <p class="section-description">
+                    DDAD vs 传统开发：范式革命
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <h3>五级协作成熟度</h3>
+                    <p>从个人探索到企业级实践的完整成长路径</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔄</div>
+                    <h3>多会话并行开发</h3>
+                    <p>通过文档同步实现团队级AI协作</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>风险分级管理</h3>
+                    <p>低、中、高风险场景的差异化处理策略</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <h3>质量管控体系</h3>
+                    <p>代码审查、测试覆盖、文档同步的闭环</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌐</div>
+                    <h3>国际化最佳实践</h3>
+                    <p>多语言文档管理与自动化工作流</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔧</div>
+                    <h3>CI/CD自动化</h3>
+                    <p>从构建到部署的全流程AI辅助</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maturity Model Section -->
+    <section class="section maturity-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">成长路径</span>
+                <h2 class="section-title">五级协作成熟度模型</h2>
+                <p class="section-description">
+                    找到你的团队所处阶段，规划成长路径
+                </p>
+            </div>
+            <div class="maturity-timeline">
+                <div class="maturity-item">
+                    <div class="maturity-level">L1</div>
+                    <div class="maturity-content">
+                        <h3>个人探索</h3>
+                        <p>单人使用AI工具，无规范约束</p>
+                        <span class="maturity-tag">起步阶段</span>
+                    </div>
+                </div>
+                <div class="maturity-item">
+                    <div class="maturity-level">L2</div>
+                    <div class="maturity-content">
+                        <h3>规范建立</h3>
+                        <p>制定基础文档规范，开始结构化协作</p>
+                        <span class="maturity-tag">规范化</span>
+                    </div>
+                </div>
+                <div class="maturity-item">
+                    <div class="maturity-level">L3</div>
+                    <div class="maturity-content">
+                        <h3>团队协作</h3>
+                        <p>多人共享规范，实现并行开发</p>
+                        <span class="maturity-tag">协作化</span>
+                    </div>
+                </div>
+                <div class="maturity-item">
+                    <div class="maturity-level">L4</div>
+                    <div class="maturity-content">
+                        <h3>流程优化</h3>
+                        <p>自动化工作流，质量管控闭环</p>
+                        <span class="maturity-tag">自动化</span>
+                    </div>
+                </div>
+                <div class="maturity-item">
+                    <div class="maturity-level">L5</div>
+                    <div class="maturity-content">
+                        <h3>企业实践</h3>
+                        <p>跨团队协作，知识资产沉淀</p>
+                        <span class="maturity-tag">企业级</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Started Section -->
+    <section class="section get-started-section" id="get-started">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">立即开始</span>
+                <h2 class="section-title">开启你的DDAD之旅</h2>
+                <p class="section-description">
+                    选择适合你的学习路径
+                </p>
+            </div>
+            <div class="learning-paths">
+                <div class="path-card">
+                    <div class="path-header">
+                        <div class="path-icon">🚀</div>
+                        <h3>新手入门</h3>
+                        <span class="path-duration">2周速成</span>
+                    </div>
+                    <ul class="path-steps">
+                        <li>第1-3章：理解核心概念</li>
+                        <li>第4章：掌握基础操作</li>
+                        <li>第5-6章：学习协作流程</li>
+                        <li>第9章：完成第一个实战</li>
+                    </ul>
+                    <a href="https://leoobai.cn/claude-code-in-teams/readme.html" class="path-link" target="_blank">
+                        开始学习 →
+                    </a>
+                </div>
+                <div class="path-card path-card-featured">
+                    <div class="path-badge">推荐</div>
+                    <div class="path-header">
+                        <div class="path-icon">⚡</div>
+                        <h3>进阶专家</h3>
+                        <span class="path-duration">1个月精通</span>
+                    </div>
+                    <ul class="path-steps">
+                        <li>完成新手路径</li>
+                        <li>第7-8章：多会话协作与质量管控</li>
+                        <li>第10-11章：中高风险场景实践</li>
+                        <li>第12-13章：国际化与开源协作</li>
+                    </ul>
+                    <a href="https://leoobai.cn/claude-code-in-teams/readme.html" class="path-link" target="_blank">
+                        深入学习 →
+                    </a>
+                </div>
+                <div class="path-card">
+                    <div class="path-header">
+                        <div class="path-icon">🎯</div>
+                        <h3>团队领导</h3>
+                        <span class="path-duration">定制化</span>
+                    </div>
+                    <ul class="path-steps">
+                        <li>第2章：理解Vibe Coding文化</li>
+                        <li>第5章：需求拆解与任务分配</li>
+                        <li>第8章：代码审查与质量管控</li>
+                        <li>附录：团队实施指南</li>
+                    </ul>
+                    <a href="https://leoobai.cn/claude-code-in-teams/readme.html" class="path-link" target="_blank">
+                        查看指南 →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">准备好革新你的开发方式了吗？</h2>
+                <p class="cta-description">
+                    加入DDAD社区，与数千名开发者一起探索AI协作的未来
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://leoobai.cn/claude-code-in-teams/readme.html" class="btn btn-primary btn-large" target="_blank">
+                        <span>阅读完整文档</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/leoobai" class="btn btn-secondary btn-large" target="_blank">
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">📚</span>
+                        <span class="logo-text">DDAD</span>
+                    </div>
+                    <p class="footer-tagline">
+                        文档驱动AI开发方法论<br>
+                        Document-Driven AI Development
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>资源</h4>
+                        <ul>
+                            <li><a href="https://leoobai.cn/claude-code-in-teams/readme.html" target="_blank">完整文档</a></li>
+                            <li><a href="https://leoobai.cn" target="_blank">作者博客</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>社区</h4>
+                        <ul>
+                            <li><a href="https://github.com/leoobai" target="_blank">GitHub</a></li>
+                            <li><a href="#get-started">开始使用</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>关于</h4>
+                        <ul>
+                            <li><a href="#about">方法论介绍</a></li>
+                            <li><a href="#principles">核心原则</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DDAD.online. All rights reserved.</p>
+                <p>Created with ❤️ for the AI development community</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
