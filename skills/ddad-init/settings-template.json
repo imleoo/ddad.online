@@ -4,10 +4,20 @@
     "defaultMode": "default"
   },
   "hooks": {
-    "PreToolUse": [],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if echo \"$CLAUDE_BASH_COMMAND\" | grep -qE '^git\\s+push|&&\\s*git\\s+push|;\\s*git\\s+push'; then echo '[PRE-PUSH HOOK] Git push blocked. Please use code review workflow first.'; exit 1; fi"
+          }
+        ]
+      }
+    ],
     "UserPromptSubmit": [
       {
-        "matcher": "",
+        "matcher": ".*\\b(git\\s+push|push\\s+.*\\bcode|推送)\\b.*",
         "hooks": [
           {
             "type": "prompt",
@@ -15,9 +25,7 @@
           }
         ]
       }
-    ],
-    "PostToolUse": [],
-    "SessionStart": []
+    ]
   },
   "env": {
     "PROJECT_NAME": "{{PROJECT_NAME}}",
