@@ -17,7 +17,7 @@
     ],
     "UserPromptSubmit": [
       {
-        "matcher": ".*\\b(git\\s+push|push\\s+.*\\bcode|推送)\\b.*",
+        "matcher": ".*\\b(git\\s+push|push\\s+(to\\s+)?(remote|origin|github|gitlab)|推送代码|推送到)\\b.*",
         "hooks": [
           {
             "type": "prompt",
